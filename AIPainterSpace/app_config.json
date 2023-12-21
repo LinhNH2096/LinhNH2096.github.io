@@ -1,0 +1,17 @@
+{
+    "app_info": {
+        "app": "ai_painter_space",
+        "current_version": "1.0.0",
+        "allowed_ads": 1
+    },
+    "api_info": {
+        "api_key_value": "Key CDE3D90CD3F14F77A9CD5292730DE97E",
+        "secret_key_value": "Secret 9C60C659DB93C281EC2C9323A9623851",
+        "api_key_name_header": "X-Key",
+        "secret_key_name_header": "X-Secret",
+        "api_url": "https://api-key.fusionbrain.ai",
+        "model_id": 4,
+        "api_run_path": "/key/api/v1/text2image/run?model_id=4",
+        "api_status_path": "/key/api/v1/text2image/status/"
+    }
+}
