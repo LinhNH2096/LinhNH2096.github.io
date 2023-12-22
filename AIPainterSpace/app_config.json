@@ -1,8 +1,7 @@
 {
     "app_info": {
         "app": "ai_painter_space",
-        "current_version": "1.0.0",
-        "allowed_ads": 1
+        "current_version": "1.0.0"
     },
     "api_info": {
         "api_key_value": "Key CDE3D90CD3F14F77A9CD5292730DE97E",
@@ -13,5 +12,9 @@
         "model_id": 4,
         "api_run_path": "/key/api/v1/text2image/run?model_id=4",
         "api_status_path": "/key/api/v1/text2image/status/"
+    },
+    "ads_info": {
+        "allowed_ads": 1,
+        "number_result_show_reward_ads": 5
     }
 }
