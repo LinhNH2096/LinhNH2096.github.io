@@ -1,31 +1,32 @@
 <head>
-<script>
-var params = function() {
-    function urldecode(str) {
-        return decodeURIComponent((str+'').replace(/\+/g, '%20'));
-    }
+    <script>
+        var params = function () {
+            function urldecode(str) {
+                return decodeURIComponent((str + '').replace(/\+/g, '%20'));
+            }
 
-    function transformToAssocArray( prmstr ) {
-        var params = {};
-        var prmarr = prmstr.split("&");
-        for ( var i = 0; i < prmarr.length; i++) {
-            var tmparr = prmarr[i].split("=");
-            params[tmparr[0]] = urldecode(tmparr[1]);
-        }
-        return params;
-    }
+            function transformToAssocArray(prmstr) {
+                var params = {};
+                var prmarr = prmstr.split("&");
+                for (var i = 0; i < prmarr.length; i++) {
+                    var tmparr = prmarr[i].split("=");
+                    params[tmparr[0]] = urldecode(tmparr[1]);
+                }
+                return params;
+            }
 
-    var prmstr = window.location.search.substr(1);
-    return prmstr != null && prmstr != "" ? transformToAssocArray(prmstr) : {};
-}();
-</script>
+            var prmstr = window.location.search.substr(1);
+            return prmstr != null && prmstr != "" ? transformToAssocArray(prmstr) : {};
+        }();
+    </script>
 </head>
 <h2 style="text-align: center;">PRIVACY POLICY MODEL FOR MOBILE APPLICATIONS</h2>
 <p></p>
-<p>This privacy policy governs your use of the software application App Name (<script>document.write(params["app"])</script>) for mobile
-    devices that was
+<p>This privacy policy governs your use of the software application
+    <script>document.write(params["app"])</script> for mobile devices that was
     created by&nbsp;Linh Nguyen.&nbsp;The Application is&nbsp;Basic description of the app (features,
-    functionality and content)&nbsp;</p>
+    functionality and content)&nbsp;
+</p>
 <h4>&nbsp;</h4>
 <h4>What information does the Application obtain and how is it used?</h4>
 <p></p>
@@ -150,4 +151,4 @@ var params = function() {
 <p>&nbsp;</p>
 <h4>Contact us</h4>
 <p>If you have any questions regarding privacy while using the Application, or have questions about our practices,
-    please contact us via email at&nbsp;vinasappreborn@gmail.com.</p>
+    please contact us via email at&nbsp;nguyenhonglinh.ios@gmail.com.</p>
