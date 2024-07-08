@@ -15,7 +15,7 @@
         "api_status_path": "/key/api/v1/text2image/status/"
     },
     "ads_info": {
-        "allowed_ads": 0,
+        "allowed_ads": 1,
         "number_result_show_reward_ads": 5
     }
 }
