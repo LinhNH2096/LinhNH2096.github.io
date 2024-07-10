@@ -1,7 +1,7 @@
 {
     "app_info": {
         "app": "ai_painter_space",
-        "current_version": "2.0.0",
+        "current_version": "2.1.0",
         "delay_get_image_interval": 0
     },
     "api_info": {
