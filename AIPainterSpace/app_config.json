@@ -1,8 +1,8 @@
 {
     "app_info": {
         "app": "ai_painter_space",
-        "current_version": "2.1.0",
-        "delay_get_image_interval": 0
+        "current_version": "2.1.1",
+        "delay_get_image_interval": 3
     },
     "api_info": {
         "api_key_value": "Key CDE3D90CD3F14F77A9CD5292730DE97E",
