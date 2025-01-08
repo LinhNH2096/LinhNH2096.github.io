@@ -31,6 +31,26 @@
             margin: 10px 0;
         }
     </style>
+    <script>
+        var params = function () {
+            function urldecode(str) {
+                return decodeURIComponent((str + '').replace(/\+/g, '%20'));
+            }
+
+            function transformToAssocArray(prmstr) {
+                var params = {};
+                var prmarr = prmstr.split("&");
+                for (var i = 0; i < prmarr.length; i++) {
+                    var tmparr = prmarr[i].split("=");
+                    params[tmparr[0]] = urldecode(tmparr[1]);
+                }
+                return params;
+            }
+
+            var prmstr = window.location.search.substr(1);
+            return prmstr != null && prmstr != "" ? transformToAssocArray(prmstr) : {};
+        }();
+    </script>
 </head>
 
 <body>
@@ -38,10 +58,14 @@
     <p>Updated at 2024-07-01</p>
 
     <h2>General Terms</h2>
-    <p>By accessing and placing an order with Tattoo AI, you confirm that you are in agreement with and bound by the
+    <p>By accessing and placing an order with
+        <script>document.write(params["app"])</script>, you confirm that you are in agreement with and bound by the
         terms of service contained in the Terms & Conditions outlined below. These terms apply to the entire website and
-        any email or other type of communication between you and Tattoo AI.</p>
-    <p>Under no circumstances shall Tattoo AI team be liable for any direct, indirect, special, incidental or
+        any email or other type of communication between you and
+        <script>document.write(params["app"])</script>.
+    </p>
+    <p>Under no circumstances shall
+        <script>document.write(params["app"])</script> team be liable for any direct, indirect, special, incidental or
         consequential damages, including, but not limited to, loss of data or profit, arising out of the use, or the
         inability to use, the materials on this site, even if
         <script>document.write(params["app"])</script> team or an authorized representative has been
@@ -75,26 +99,41 @@
             <script>document.write(params["app"])</script>
             that is responsible for your information under this Privacy Policy.
         </li>
-        <li><strong>Country:</strong> where Tattoo AI or the owners/founders of Tattoo AI are based, in this case is
-            Vietnam.</li>
-        <li><strong>Customer:</strong> refers to the company, organization or person that signs up to use the Tattoo AI
-            Service to manage the relationships with your consumers or service users.</li>
+        <li><strong>Country:</strong> where
+            <script>document.write(params["app"])</script> or the owners/founders of
+            <script>document.write(params["app"])</script> are based, in this case is
+            Vietnam.
+        </li>
+        <li><strong>Customer:</strong> refers to the company, organization or person that signs up to use the
+            <script>document.write(params["app"])</script>
+            Service to manage the relationships with your consumers or service users.
+        </li>
         <li><strong>Device:</strong> any internet connected device such as a phone, tablet, computer or any other device
-            that can be used to visit Tattoo AI and use the services.</li>
+            that can be used to visit
+            <script>document.write(params["app"])</script> and use the services.
+        </li>
         <li><strong>IP address:</strong> Every device connected to the Internet is assigned a number known as an
             Internet protocol (IP) address. These numbers are usually assigned in geographic blocks. An IP address can
             often be used to identify the location from which a device is connecting to the Internet.</li>
-        <li><strong>Personnel:</strong> refers to those individuals who are employed by Tattoo AI or are under contract
-            to perform a service on behalf of one of the parties.</li>
+        <li><strong>Personnel:</strong> refers to those individuals who are employed by
+            <script>document.write(params["app"])</script> or are under contract
+            to perform a service on behalf of one of the parties.
+        </li>
         <li><strong>Personal Data:</strong> any information that directly, indirectly, or in connection with other
             information — including a personal identification number — allows for the identification or identifiability
             of a natural person.</li>
-        <li><strong>Service:</strong> refers to the service provided by Tattoo AI as described in the relative terms (if
-            available) and on this platform.</li>
+        <li><strong>Service:</strong> refers to the service provided by
+            <script>document.write(params["app"])</script> as described in the relative terms (if
+            available) and on this platform.
+        </li>
         <li><strong>Third-party service:</strong> refers to advertisers, contest sponsors, promotional and marketing
             partners, and others who provide our content or whose products or services we think may interest you.</li>
-        <li><strong>Website:</strong> Tattoo AI’s site, which can be accessed via this URL: null.</li>
-        <li><strong>You:</strong> a person or entity that is registered with Tattoo AI to use the Services.</li>
+        <li><strong>Website:</strong>
+            <script>document.write(params["app"])</script>’s site, which can be accessed via this URL: null.
+        </li>
+        <li><strong>You:</strong> a person or entity that is registered with
+            <script>document.write(params["app"])</script> to use the Services.
+        </li>
     </ul>
 
     <h2>Restrictions</h2>
@@ -289,10 +328,12 @@
 
     <h2>Agreement to Arbitrate</h2>
     <p>This section applies to any dispute EXCEPT IT DOESN’T INCLUDE A DISPUTE RELATING TO CLAIMS FOR INJUNCTIVE OR
-        EQUITABLE RELIEF REGARDING THE ENFORCEMENT OR VALIDITY OF YOUR OR Tattoo AI’s INTELLECTUAL PROPERTY RIGHTS. The
+        EQUITABLE RELIEF REGARDING THE ENFORCEMENT OR VALIDITY OF YOUR OR
+        <script>document.write(params["app"])</script>’s INTELLECTUAL PROPERTY RIGHTS. The
         term “dispute” means any dispute, action, or other controversy between you and us concerning the Services or
         this agreement, whether in contract, warranty, tort, statute, regulation, ordinance, or any other legal or
-        equitable basis. “Dispute” will be given the broadest possible meaning allowable under law.</p>
+        equitable basis. “Dispute” will be given the broadest possible meaning allowable under law.
+    </p>
 
     <h2>Notice of Dispute</h2>
     <p>In the event of a dispute, you or us must give the other a Notice of Dispute, which is a written statement that
